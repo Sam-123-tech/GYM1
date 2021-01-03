@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body{
+    background-color: palegoldenrod;
+}
+.navbar li{
+        float:left;
+    list-style:none;
+    margin: 15px 20px;
+    }
+    .navbar{
+        background-color: blue;
+        border-radius: 30px;
+    }
+    .navbar ul{
+        overflow: auto;
+    }
+    .search{
+        float: right;
+        color: honeydew;
+        padding: 12px 10px 
+    }
+    .navbar input{
+                border:5px solid plum;
+                border-radius: 14px;
+                padding:3px 15px;
+                width:100px;
+            }
+    .navbar li a{
+                padding:3px 3px;
+                text-decoration:none;
+                color: paleturquoise;
+    font-family: 'Pacifico', cursive;
+            }
+            .navbar li a:hover{
+                color: fuchsia;
+                font-family: 'Pacifico', cursive;
+                background-color: darkgoldenrod;
+            }
+            .navbar :hover{
+            background-color: darkred;
+            border-radius: 30px;
+        }
+            h1{
+            margin:12px auto;
+            width:400px;
+            font-family: 'Pacifico', cursive;
+            color: hotpink;
+            background-color: cornflowerblue;
+        }
+        .GYM{
+                  border:5px solid deeppink;
+                  background-color:floralwhite;
+                  margin: 10px;
+                  padding: 8px;
+                  box-shadow: 8px 9px rgb(255, 0, 0), 14px 16px rgb(0, 255, 0) ;
+        }
+        #QW{
+               clear: both;
+               width: 45%;
+               color: darkorchid;
+               font-family: 'Pacifico', cursive;
+           }
+           #ER{
+            float: right;
+            width: 45%;
+            color: chartreuse;
+            font-family: 'Pacifico', cursive;
+        }
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 5px solid darkorange;
+            margin:2px;
+            display: block;
+            font-family: 'Pacifico', cursive;
+        }
+        #box-1{ 
+           position: relative;
+           background-color: firebrick;
+           font-family: 'Pacifico', cursive;
+           color: wheat;
+           box-shadow: 10px -13px  rgb(0, 217, 255);
+        }   
+        #box-2{ 
+            position: relative;
+            color: burlywood;
+           background-color: forestgreen; 
+           font-family: 'Pacifico', cursive;
+           box-shadow: -10px 13px  rgb(2, 255, 129);
+        }
+        .btn{
+            font-family:'Pacifico', cursive ;
+            font-weight: bold;
+            color: sandybrown;
+            background-color: rgb(255, 72, 0);
+            padding:6px;
+            border: none;
+            cursor:pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        .btn:hover{
+            color: yellow;
+            background-color:cadetblue;
+        }
+     #btn4{
+          float: right;
+      }
+      .YOGA{
+          border: 3px solid darkmagenta;
+          padding: 2px;
+          margin: 5px;
+      }
+      .sum{
+          border: 5px solid rgb(231, 190, 8);
+          color: saddlebrown;
+          background-color: rgb(1, 247, 255, 0.897);
+          padding: 5px;
+          margin: 5px;
+      }
+
+      #box1{
+        display: flex;
+        height: 200px;
+        width: 200px;
+        background-color: orchid;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s ease-in-out .3s;
+    }
+    #box1:hover{
+        background-color: deeppink;
+        height: 400px;
+        width: 400px;
+        border-radius: 100px;
+        font-size: 45px;
+    }
+    .container2{
+            height: 80vh;
+            background-color:rgb(109, 163, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:rgb(255, 60, 0);
+            border: 10px solid thistle;
+            border-radius: 8px;
+            height: 400px;
+            width: 400px;
+            transition:all 1s ease-in-out;
+        }
+        .box3:hover{
+            /*transform: rotate(180deg);*/
+            background-color: deeppink;
+           transform: skew(40deg);
+           /*transform: translateX(120px);
+            transform: translateY(120px);
+            transform: translate(120px,120px);
+            transform:scale(2);*/
+        } 
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar"> 
+            <ul>
+                <li><a href="&#">Home</a></li>
+                <li><a href="&#">Services</a></li>
+                <li><a href="&#">About</a></li>
+                <li><a href="&#">Contact Us</a></li>
+                <li><a href="&#">Client</a></li>
+                 <li><a href="&#">? HELP</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                  </div>
+                </ul>
+    </nav>
+    </header>
+    <h2>
+        MY BRAND NEW GYM AND FITNESS CENTER
+    </h2>
+  <em>It wiil be a great oppurtunity for you to participate in my GYM and fitness center.</em>
+  <strong>Hurry and register now. The name of my Gym Center is To Be Healthy Do GYM.</strong>
+  <strong>
+      <h1> 
+          <em>
+              HERE IS THE FORM :- 
+          </em>
+      </h1>
+  </strong>
+  <form action="backend.php">
+    <div>
+        Name: <input type="text" name="myName">
+    </div>
+    <br>
+    <div>
+        Address: <input type="text" name="myAddress">
+    </div>
+    <br>
+    <div>
+        Email: <input type="email" name="myEmail">
+    </div>
+
+    <br>
+    <div>
+        Date of Birth: <input type="date" name="myDate">
+    </div>
+    <br>
+    <div>
+        Gender: Male <input type="checkbox" name="myGender"> Female <input type="checkbox" name="myGender">
+        Other <input type="checkbox" name="myGender">
+    </div>
+    <br>
+    <div>
+        Write about yourself: <br><textarea name="myText" cols="90" rows="10"></textarea>
+    </div>
+    <br>
+    <div>
+   City: <input type="City" name="myCity"> 
+   </div>
+   <br>
+        <div>
+            <label for="course">Which one do you want to take ? </label>
+            <select name="myCourse" id="course">
+                <option value="GYM">GYM</option>
+                <option value="YOGA" selected>YOGA</option>
+                </select>
+                </div>
+   <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+        <h1>BENEFITS OF GYM AND YOGA :-</h1>
+        <div class="GYM" id="QW">
+            <h2>GYM</h2>
+            <p class="para" id="QWpara">There are several benefits of GYM. 
+                GYM helps us to be healthy and fit. 
+                It helps to keep all our body parts strong and flexible.
+                Your muscles will be of 6 packs !</p>
+                </div>
+                <div class="GYM" id="ER">
+                    <h2>YOGA</h2>
+                    <p class="para" id="ERpara">Yoga also keep our boy fit and healthy. 
+                        It is the oldest remedy of India to be fit and healthy. 
+If you do yoga regularly, then your body will be strong, flexible and balanced.</p>
+                    </div>
+            <div class="box" id="box-1">GYM will help you a lot in your daily life.</div>
+    <div class="box" id="box-2">Be ready for your strength and flexiblity !</div>
+    <a href="!@#$%^&*()_+~" class="btn" id="btn4">Read more</a>
+    <div class="YOGA" id="TY">
+        <summary class="sum" id="TYsum">
+            <details>
+    <summary>For whom is it important to do GYM ?</summary>
+   It is important for teenagers to old people to do GYM.
+</details>
+</div>
+<div class="YOGA" id="UI">
+    <summary class="sum" id="UIsum">
+        <details>
+<summary>What are the benefits of GYM or YOGA ?</summary>
+   GYM and YOGA helps us to be fit, healthy and balanced. 
+   Our heart beats faster and produces more blood which is very good for our health.
+    </details>
+</div>
+    <div class="YOGA" id="OP">
+        <summary class="sum" id="OPsum">
+            <details>
+    <summary>Why these should be done regularly ?</summary>
+    It is because if do these regularly and not twice or thrice a week, our body will always be healthy, fit and balanced.
+    </details>
+</div>
+    <div class="YOGA" id="AS">
+        <summary class="sum" id="ASsum">
+            <details>
+    <summary>Where to these things ?</summary>
+    We should do these YOGAS and GYM in an open place such as- on the terrace, in the open field or in an open park.
+    </details>
+</div>
+<hr>
+<img src="Images\c7.jpg" alt="ERROR LOADING IMAGE" width="220" height="170">
+<img src="Images\c8.jpg" alt="ERROR LOADING IMAGE" width="220" height="170">
+<img src="Images\c9.jpg" alt="ERROR LOADING IMAGE" width="220" height="170">
+<img src="Images\c10.jpg" alt="ERROR LOADING IMAGE" width="190" height="170">
+<img src="Images\a7.jpg" alt="ERROR LOADING IMAGE" width="220" height="170">
+<img src="Images\a8.jpg" alt="ERROR LOADING IMAGE" width="200" height="170">
+<img src="Images\a9.jpg" alt="ERROR LOADING IMAGE" width="220" height="170">
+<img src="Images\a10.jpg" alt="ERROR LOADING IMAGE" width="220" height="170">
+<img src="Images\d3.jpg" alt="ERROR LOADING IMAGE" width="220" height="170">
+<img src="Images\d4.jpg" alt="ERROR LOADING IMAGE" width="220" height="170">
+<h2> Images and Subjects may lead to copyright. &copy; </h2>
+<div class="contain">
+    <div id="box1">  Welcome to my Brand New GYM, YOGA and Fitness Center. 🙂😊😁😀😃🤩.   
+    </div>
+    </div> 
+    <hr>
+    <div class="container2">
+        <div class="box3">
+        </div>
+    </div>
+</body>
+</html>      
